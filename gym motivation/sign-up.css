@@ -1,0 +1,86 @@
+
+/* 
+	Global classes 
+					*/
+body {
+	background-image: url("iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+	background:  linear-gradient(to bottom, #ff6666, rgb(250, 212, 183));
+/*    background: #ff6666;*/
+}
+
+.head-bar {
+	text-align: center;
+	margin: 45px auto 45px auto;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	}
+
+
+.head-bar h1{
+	display: inline-block;
+    color: white;
+	font-size: 50px;
+	margin-top: 70px;
+
+}
+
+.sign_up
+{ 
+background: linear-gradient(bottom,	#FFE7BA,orange); 
+background: -ms-linear-gradient(270deg,	#FFE7BA, orange); 
+background: -webkit-linear-gradient(270deg,#F5DEB3 ,orange); 
+background: -o-linear-gradient(270deg,#FFE7BA, 	orange); 
+background: -moz-linear-gradient(270deg, #F5DEB3, orange);
+width:70%; 
+height:2em; 
+border-radius:25px; 
+text-align: center; 
+vertical-align: middle; 
+margin-left: 15%; 
+margin-bottom: 55px;
+font-size:1.7em; 
+z-index: 999; 
+color: white;
+}
+
+.sign_up a{
+	text-decoration: none;
+	color:white;
+}
+
+.sign_in
+{ 
+background: linear-gradient(bottom,	#FFE7BA,#FF7F00); 
+background: -ms-linear-gradient(270deg,	#FFE7BA, #FF7F00); 
+background: -webkit-linear-gradient(270deg,#F5DEB3 ,#FF7F00); 
+background: -o-linear-gradient(270deg,#FFE7BA, 	#FF7F00); 
+background: -moz-linear-gradient(270deg, #F5DEB3, #FF7F00);
+width:70%; 
+height:2em; 
+border-radius:25px; 
+text-align: center;
+vertical-align: middle; 
+margin-left: 15%; 
+margin-bottom: 25px;
+font-size:1.7em; 
+z-index: 999; 
+color: white;
+}
+
+.sign_in a{
+	text-decoration: none;
+	color:white;
+}
+
+
+
+
+
