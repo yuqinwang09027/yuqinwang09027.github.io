@@ -1,0 +1,432 @@
+@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
+
+body {
+  background-image: url("iphoneOL.jpg");
+  background-repeat: no-repeat;
+  font-family: Avenir, sans-serif;
+}
+
+
+#screen {
+  height: 530px;
+  width: 300px;
+  margin: 105px 23px;
+}
+
+.head-bar {
+  width: 300px;
+  height: 45px;
+  background-image: url("headbar.jpeg");
+
+  color: white;
+  text-shadow: 1px 1px black;
+  margin-left: 0px; 
+  text-align: center;
+  
+}
+
+.header{
+  font-size: 16pt;
+  padding-left: 100px;
+  padding-top: 10px;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+
+.back-button {
+  width: 50px;
+  height: 28px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: -60px;
+  float: left;
+  text-align: center;
+  text-shadow:none;
+  padding-top: 2px;
+}
+
+
+.back-button a{
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  margin:20px 0px 0px 10px;
+  width:40%;
+  padding:10px 20px 30px;
+  font-family: 'Dosis';
+  font-weight:700;
+}
+
+.form-control {
+  position:relative;
+  margin-top:40px;
+  width:170px;
+  
+  float: left;
+}
+
+.unit{
+  margin-left: 150px;
+  padding-top:65px;
+  color:#888;
+}
+
+
+input {
+  border:none;
+  border-bottom:1px solid #888;
+  padding:10px 0;
+  width:150px;
+  display:block;
+  font-size:16px;
+  font-family: 'Dosis';
+  color: #888;
+  text-align: center;
+  margin-bottom:0px;
+}
+
+/*input:focus{
+  border:none;
+  outline:none;
+}
+
+input:focus ~ label, .form-control input:valid ~ label  {
+  top:-10px;
+  font-size:12px;
+  left:2px;
+  color:black;
+
+}*/
+
+label {
+  position:absolute;
+  top:8px;
+  left:5px;
+  color:rgba(255, 125, 0, 0.35);
+  transistion: 0.3s ease all;
+  -webkit-transition:0.3s ease all;
+}
+
+.bar {
+  position:relative;
+  width: 150px;
+  display:inline-block;
+}
+
+/*.bar:before, .bar:after 	{
+  content:'';
+  height:3px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.bar:before {
+  left:50%;
+}
+
+.bar:after {
+  right:50%; 
+}*/
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+input:valid ~ .bar:before, input:valid ~ .bar:after{
+  background:black;  
+}
+
+input:invalid ~ .bar:before, input:invalid ~ .bar:after{
+  background:black;  
+}
+
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button {
+  width:50px;
+  height: 30px;
+  background: #ff6666;
+  border: 1px solid #ff6666;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 40px 0px 0px 100px;
+  padding: 1px 0px 0px 0px;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Dosis';
+}
+
+button::before,
+button::after {
+
+  background: #ff6666;
+  content: '';
+  position: absolute;
+
+}
+
+button:hover {
+  color: #ff6666;
+}
+
+.button1::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.button1:hover:after {
+  height: 100%;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-clear-button {
+  display: none;
+}
+
+
+.date {
+  position: relative;
+  width: 150px;
+  overflow: auto;
+  margin-top: 10px;
+  background: #000;
+  color: #ff6666;
+}
+
+#button1 a{
+  text-decoration: none;
+  color: white;
+}
+
+input,
+button{
+  outline: none !important; 
+}
+
+button.fb {
+  border: none;
+  background: #3b5998;
+  width: 160px;
+  height: 25px;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid #29487d;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition:all 0.3s linear;
+}
+button.fb:hover {
+  background: #fff;
+  color: #3b5998;
+}
+
+button.form-btn {
+
+  width: 150px;
+  height: 60px;
+  bottom: 0;
+  border: 0;
+  font-family: 'Dosis';
+  font-size: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+}
+
+button.form-btn.sx {
+  left: 0;
+  border-radius: 5px;
+  background-color: #888;
+  color: #fff;
+  transition:all 0.3s linear;
+  margin-top: 10px;
+}
+
+button.form-btn.sx:hover {
+  background-color:black;
+  color: #fff;
+}
+
+button.form-btn.sx.back {
+  background-color: #ff6666;
+  transition:all 0.3s linear;
+}
+
+button.form-btn.sx.back:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+
+
+
+::-webkit-input-placeholder {
+   color: #888;
+  font-family: 'Roboto';
+  font-weight:100;
+}
+
+:-moz-placeholder {
+   color: #888;  
+  font-family: 'Roboto';
+  font-weight:100;
+}
+
+::-moz-placeholder {
+   color: #888;  
+  font-family: 'Roboto';
+  font-weight:100;
+}
+
+:-ms-input-placeholder {  
+   color: #888; 
+  font-family: 'Roboto';
+  font-weight:100;
+}
+
+.signIn input,
+.signUp .w100 {
+  width: 85%;
+}
+
+.signUp {
+  position: relative;
+  
+  width: 300px;
+  height: 485px;
+  margin: 0px 0px 0px 8px; 
+}
+.signIn {
+  position: relative;
+  
+  width: 300px;
+  height: 485px;
+  margin: 0px 0px 0px 8px; 
+}
+.account{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.active-sx{
+  animation-name: foregrounding-sx;
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.inactive-sx{
+  animation-name: overshadowing-sx;
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes overshadowing-sx {
+  0%{
+    z-index:2;
+    transform: perspective(100px) translate3d(0px, 0px, 0px);
+    opacity: 1;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+  }
+  100%{
+    z-index: 1;
+    transform: perspective(100px) translate3d(-100px, 0px, -30px);
+    opacity: 0.5;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+
+@keyframes foregrounding-sx {
+  0%{
+    z-index:1;
+    transform: perspective(100px) translate3d(-100px, 0px, -30px);
+    opacity: 0.5;
+  }
+  50%{
+    z-index:2;
+    transform: perspective(100px) translate3d(-400px, 0px, -30px);
+  }
+  100%{
+    z-index:2;
+    transform: perspective(100px) translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+
+.form-btn a {
+  text-decoration: none;
+  color:white;
+  font-size: 23px;
+} 
+.signIn input,
+.signUp {
+  width: 85%;
+}
+
+.signUp {
+  position: relative;
+  
+  width: 300px;
+  height: 300px;
+  margin: 0px 0px 0px 8px; 
+}
+
+ button.form-btn {
+
+  width:70%; 
+height: 50px;
+  bottom: 0;
+  border: 0;
+  font-family: 'Dosis';
+  font-size: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+button.form-btn.sx {
+  left: 0;
+  border-radius: 5px;
+  background-color: #11111161;
+  color: #fff;
+  transition:all 0.3s linear;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+button.form-btn.sx:hover {
+  background-color:black;
+  color: #fff;
+}
+
+button.form-btn.sx.back {
+  background-color: #ff6666;
+  transition:all 0.3s linear;
+}
+
+button.form-btn.sx.back:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+

@@ -1,0 +1,245 @@
+/* 
+	Global classes 
+					*/
+@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
+
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: bolder;
+}
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+
+}
+
+.head-bar {
+  width: 300px;
+  height: 45px;
+  background-image: url("headbar.jpeg");
+
+  color: white;
+  text-shadow: 1px 1px black;
+  margin-left: 0px; 
+  text-align: center;
+	
+}
+
+
+.bg{
+	display: block;
+	width: 300px;
+	height: 485px;
+	background-color: white;
+}
+/*
+	The class define the album that which side is supposed to float
+																	*/
+.left{
+	float: left;
+	margin-left: 10px;
+	margin-top: 40px;
+}
+
+#graph-title {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.right{
+	float:right;
+	margin-right: 10px;
+	margin-top: 40px;
+}
+
+.albums-album-wrapper {
+	top: -500px;
+	width: 135px;
+	height: 135px;
+	margin: 0px;
+	display: inline-block;
+
+}
+
+
+
+.back-button {
+	width: 50px;
+	height: 28px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: -60px;
+	float: left;
+	text-align: center;
+	text-shadow:none;
+	padding-top: 2px;
+}
+
+
+
+/*
+	Layout for li element within the list
+											*/
+ol li{
+	border: 1px solid rgb(167,167,167);
+	padding-left: 5px;
+	margin-top: 4px;
+	font-weight:440;
+}
+
+
+/* 
+	Player 
+			*/
+
+.chart{
+    border: 10px, orange,solid;
+    width: 210px;
+    height: 240px;
+}
+.player-album-art {
+	display: inline-block;
+	width: 210px;
+	height: 200px;
+	margin-left: 30px;
+	margin-top: 38px;
+    background-color: white;
+}
+
+.add-new-data {
+	display: block;
+	margin-top: 60px;
+	margin-left: 75px;
+	text-align: center;
+	font-size: 120%;
+	width: 200px;
+	height: 50px;
+	background-color: #ff6666;
+	border-radius: 5px;
+	font-family: 'Dosis';
+
+	width: 150px;
+    height: 60px;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#add-new{
+	
+	font-size: 110%;
+	margin-top: 10px;
+	height: 50px;
+	text-align: center;
+	color: #ffffff;
+}
+
+/*for chart*/
+
+
+li{
+  font: 15px sans-serif;
+}
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    .x.axis path {
+        display: none;
+    }
+
+    .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+    
+    .grid {
+        fill: none;
+        shape-rendering: crispEdges;
+        stroke: lightgrey;
+        opacity: 0.7;
+        stroke-width: 1px;
+    }
+    .segmentText{
+        cursor:pointer;
+    }
+    div.tooltip {
+        position: absolute;
+        text-align: center;
+        width: 120px;
+        height: 15px;
+        padding: 5px;
+        font: 12px sans-serif;
+        background: #ddd;
+        border: solid 1px #aaa;
+        border-radius: 8px;
+        pointer-events: none;
+    }
+
+    svg{
+    	font-size: 12px;
+    }
+
+    #divChartTrends {
+    	padding-top: 25px;
+    }
+
+ button.form-btn {
+
+  width:70%; 
+height: 60px;
+  bottom: 0;
+  border: 0;
+  font-family: 'Dosis';
+  font-size: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+
+  margin-left: 45px;
+}
+
+button.form-btn.sx {
+  left: 0;
+  border-radius: 5px;
+  background-color: #11111161;
+  color: #fff;
+  transition:all 0.3s linear;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button.form-btn.sx:hover {
+  background-color:black;
+  color: #fff;
+}
+
+button.form-btn.sx.back {
+  background-color: #ff6666;
+  transition:all 0.3s linear;
+}
+
+button.form-btn.sx.back:hover {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.bt{
+	margin-top: 30px;
+}
+
+
